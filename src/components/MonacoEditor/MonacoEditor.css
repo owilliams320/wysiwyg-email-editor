@@ -1,0 +1,26 @@
+.buttons {
+  background-color: var(--cv-light-surface-canvas);
+  border-bottom: 1px solid var(--cv-theme-light-colors-outline-variant);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.buttons button {
+  background-color: transparent;
+  border: 1px solid var(--cv-theme-light-colors-outline-variant);
+  border-radius: 8px;
+  box-shadow: none;
+  cursor: pointer;
+  font-family: Inter;
+  font-weight: 500;
+  padding: 0.5rem;
+  transition: background-color 15ms ease-in;
+}
+
+.buttons button:hover {
+  background-color: var(--cv-light-secondary);
+  color: var(--cv-light-on-secondary);
+}

@@ -1,0 +1,29 @@
+.editor-container {
+  display: flex;
+  height: calc(100vh - 72px);
+}
+
+.editor-left {
+  flex: 1;
+  border: 1px solid var(--cv-theme-light-colors-outline-variant);
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+
+.editor-right {
+  flex: 1;
+  margin: 0 10px;
+  overflow-y: auto;
+
+  box-sizing: border-box;
+}
+
+.preview-content {
+  border-radius: 5px;
+  border-top: 1px solid var(--cv-theme-light-colors-outline-variant);
+  padding: 10px;
+  overflow-y: auto;
+  height: 100%;
+}
