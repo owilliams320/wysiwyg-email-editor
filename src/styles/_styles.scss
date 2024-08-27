@@ -1,10 +1,5 @@
 @import '@covalent/tokens';
 
-:root {
-  color-scheme: light dark;
-  supported-color-schemes: light dark;
-}
-
 a,
 a:-webkit-any-link {
   color: inherit !important;
@@ -65,6 +60,10 @@ a:-webkit-any-link {
 
 .bg-gray-25 {
   background-color: var(--cv-theme-light-palettes-neutral-97) !important;
+}
+
+.bg-white {
+  background-color: var(--cv-light-surface-canvas) !important;
 }
 
 .bold {

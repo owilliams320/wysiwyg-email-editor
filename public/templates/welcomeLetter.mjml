@@ -1,16 +1,16 @@
 <mjml>
   <mj-head>
     <mj-raw>
-      <meta name="color-scheme" content="light dark" />
-      <meta name="supported-color-schemes" content="light dark" />
+      <meta name="color-scheme" content="light" />
+      <meta name="supported-color-schemes" content="light" />
     </mj-raw>
   </mj-head>
-  <mj-body css-class="body">
+  <mj-body css-class="body bg-white">
     <mj-section mj-class="p-0">
       <mj-column width="100%">
         <mj-image
           mj-class="p-0"
-          src="https://cdn.jsdelivr.net/gh/bsahitya/mjml-templates/assets/tour-welcome-hero.png"
+          src="/wysiwyg-email-editor/hero-image.png"
           alt=""
         />
       </mj-column>

@@ -5,7 +5,10 @@ import './App.css';
 const App: React.FC = () => {
   return (
     <div className="app">
-      <h1 className="title">MJML Email Editor</h1>
+      <div className="title">
+        <img src="/wysiwyg-email-editor/teradata.svg" alt="" />
+        <h2>MJML Email Editor</h2>
+      </div>
       <MJMLEditor />
     </div>
   );

@@ -1,5 +1,5 @@
 .buttons {
-  background-color: var(--cv-light-surface-canvas);
+  background-color: var(--cv-light-surface-neutral);
   border-bottom: 1px solid var(--cv-theme-light-colors-outline-variant);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -9,7 +9,7 @@
 }
 
 .buttons button {
-  background-color: transparent;
+  background-color: var(--cv-light-surface-canvas);
   border: 1px solid var(--cv-theme-light-colors-outline-variant);
   border-radius: 8px;
   box-shadow: none;

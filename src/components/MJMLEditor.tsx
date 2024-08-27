@@ -21,12 +21,14 @@ const MJMLEditor: React.FC = () => {
   const fetchCssAndAttributes = async (mjml: string) => {
     try {
       // Fetch the processed CSS file
-      const css = await fetch('styles.css').then((res) => res.text());
-
-      // Fetch the MJML attributes from the XML file
-      const attributes = await fetch('_mjmlStyles.xml').then((res) =>
+      const css = await fetch('/wysiwyg-email-editor/styles.css').then((res) =>
         res.text()
       );
+
+      // Fetch the MJML attributes from the XML file
+      const attributes = await fetch(
+        '/wysiwyg-email-editor/_mjmlStyles.xml'
+      ).then((res) => res.text());
 
       // Check if the MJML has an <mj-head> tag
       const headTagRegex = /<mj-head>([\s\S]*?)<\/mj-head>/;
@@ -83,7 +85,9 @@ const MJMLEditor: React.FC = () => {
   useEffect(() => {
     const fetchMjmlCode = async () => {
       try {
-        const response = await fetch('templates/welcomeLetter.mjml');
+        const response = await fetch(
+          'wysiwyg-email-editor/templates/welcomeLetter.mjml'
+        );
         const text = await response.text();
         setMjmlCode(text);
       } catch (error) {

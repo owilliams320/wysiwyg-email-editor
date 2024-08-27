@@ -1294,11 +1294,6 @@
   --cv-typography-code-line-height: 20px;
 }
 
-:root {
-  color-scheme: light dark;
-  supported-color-schemes: light dark;
-}
-
 a,
 a:-webkit-any-link {
   color: inherit !important;
@@ -1359,6 +1354,10 @@ a:-webkit-any-link {
 
 .bg-gray-25 {
   background-color: #f6f7fbff !important;
+}
+
+.bg-white {
+  background-color: #ffffffff !important;
 }
 
 .bold {
