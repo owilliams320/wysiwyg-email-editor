@@ -29,7 +29,10 @@ const App: React.FC = () => {
           >
             menu
           </span>
-          <img src="/wysiwyg-email-editor/teradata.svg" alt="" />
+          <img
+            src="https://cdn.jsdelivr.net/gh/bsahitya/wysiwyg-email-editor/public/images/teradata.svg"
+            alt=""
+          />
           <h2>MJML Email Editor</h2>
         </div>
         <MJMLEditor selectedTemplate={selectedValue} />

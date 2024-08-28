@@ -12,7 +12,7 @@
           align="left"
           width="126px"
           mj-class="p-0"
-          src="/wysiwyg-email-editor/images/primary-logo.png"
+          src="https://cdn.jsdelivr.net/gh/bsahitya/wysiwyg-email-editor/public/images/primary-logo.png"
           alt=""
         />
       </mj-column>
@@ -48,7 +48,7 @@
         <mj-column width="50%"
           ><mj-image
             mj-class="pr-0"
-            src="/wysiwyg-email-editor/images/marketing-person.png"
+            src="https://cdn.jsdelivr.net/gh/bsahitya/wysiwyg-email-editor/public/images/marketing-person.png"
             alt=""
         /></mj-column>
       </mj-section>
@@ -70,7 +70,7 @@
           <mj-image
             mj-class="pl-0"
             width="26px"
-            src="/wysiwyg-email-editor/images/insights.png"
+            src="https://cdn.jsdelivr.net/gh/bsahitya/wysiwyg-email-editor/public/images/insights.png"
             alt=""
             align="left"
           />
@@ -83,7 +83,7 @@
           <mj-image
             mj-class="pl-0"
             width="26px"
-            src="/wysiwyg-email-editor/images/analytics.png"
+            src="https://cdn.jsdelivr.net/gh/bsahitya/wysiwyg-email-editor/public/images/analytics.png"
             alt=""
             align="left"
           /><mj-text mj-class="marketing-h3 pb-0_5"> Analytics</mj-text>
@@ -108,7 +108,7 @@
         <mj-column width="35%">
           <mj-image
             mj-class="pr-0 img-rounded"
-            src="/wysiwyg-email-editor/images/people.png"
+            src="https://cdn.jsdelivr.net/gh/bsahitya/wysiwyg-email-editor/public/images/people.png"
             alt=""
             align="right"
           />
