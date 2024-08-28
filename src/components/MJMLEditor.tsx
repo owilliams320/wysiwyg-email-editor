@@ -4,7 +4,11 @@ import Preview from './Preview/Preview';
 import mjml2html from 'mjml-browser';
 import './MJMLEditor.css'; // Custom styles
 
-const MJMLEditor: React.FC = () => {
+interface MJMLEditorProps {
+  selectedTemplate?: string | null;
+}
+
+const MJMLEditor: React.FC<MJMLEditorProps> = ({ selectedTemplate }) => {
   const [mjmlCode, setMjmlCode] = useState<string>(
     '<mjml><mj-body><mj-section><mj-column><mj-text>Welcome</mj-text></mj-column></mj-section></mj-body></mjml>'
   );
@@ -21,14 +25,14 @@ const MJMLEditor: React.FC = () => {
   const fetchCssAndAttributes = async (mjml: string) => {
     try {
       // Fetch the processed CSS file
-      // Change this to /wysiwyg-email-editor/styles.css when running locally
-      const css = await fetch('styles.css').then((res) => res.text());
+      const css = await fetch(`${process.env.PUBLIC_URL}/styles.css`).then(
+        (res) => res.text()
+      );
 
       // Fetch the MJML attributes from the XML file
-      // Change this to /wysiwyg-email-editor/_mjmlStyles.xml when running locally
-      const attributes = await fetch('_mjmlStyles.xml').then((res) =>
-        res.text()
-      );
+      const attributes = await fetch(
+        `${process.env.PUBLIC_URL}/_mjmlStyles.xml`
+      ).then((res) => res.text());
 
       // Check if the MJML has an <mj-head> tag
       const headTagRegex = /<mj-head>([\s\S]*?)<\/mj-head>/;
@@ -85,8 +89,10 @@ const MJMLEditor: React.FC = () => {
   useEffect(() => {
     const fetchMjmlCode = async () => {
       try {
-        // change this to wysiwyg-email-editor/templates/welcomeLetter.mjml when running locally
-        const response = await fetch('templates/welcomeLetter.mjml');
+        console.log(`${process.env.PUBLIC_URL}/${selectedTemplate}`);
+        const response = await fetch(
+          `${process.env.PUBLIC_URL}/${selectedTemplate}`
+        );
         const text = await response.text();
         setMjmlCode(text);
       } catch (error) {
@@ -95,7 +101,7 @@ const MJMLEditor: React.FC = () => {
     };
 
     fetchMjmlCode();
-  }, []);
+  }, [selectedTemplate]);
 
   return (
     <div className="editor-container">

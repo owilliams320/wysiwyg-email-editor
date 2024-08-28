@@ -1294,6 +1294,11 @@
   --cv-typography-code-line-height: 20px;
 }
 
+:root {
+  color-scheme: light;
+  supported-color-schemes: light;
+}
+
 a,
 a:-webkit-any-link {
   color: inherit !important;
@@ -1347,9 +1352,14 @@ a:-webkit-any-link {
 .bg-primary,
 .cta-button p,
 .cta-button a,
-.cta-button td {
+.cta-button td,
+.social-icon table {
   background-color: #00233cff !important;
   color: #ffffffff !important;
+}
+
+.social-icon table td {
+  padding: 5px;
 }
 
 .bg-gray-25 {
@@ -1358,6 +1368,10 @@ a:-webkit-any-link {
 
 .bg-white {
   background-color: #ffffffff !important;
+}
+
+.bg-orange {
+  background-color: #ff5f02ff !important;
 }
 
 .bold {
@@ -1384,85 +1398,15 @@ a:-webkit-any-link {
   color: #727d9cff;
 }
 
-@media (prefers-color-scheme: dark) {
-  .body div,
-  .body p {
-    color: #394851 !important;
-  }
+.orange-line {
+  border-radius: 2px;
+  border-top: 2px solid #ff5f02ff !important;
+  width: 18px;
+}
 
-  .list li {
-    margin: 0.5rem 0;
-  }
-
-  .title div {
-    color: #394851 !important;
-  }
-
-  .section-title div {
-    color: #43515a !important;
-  }
-
-  .align-left {
-    text-align: left;
-  }
-
-  .align-center {
-    text-align: center;
-  }
-
-  .align-right {
-    text-align: right;
-  }
-
-  .border-top {
-    border-top: 1px solid #d1d5e7ff;
-  }
-
-  .border-bottom {
-    border-bottom: 1px solid #d1d5e7ff;
-  }
-
-  .border-left {
-    border-left: 1px solid #d1d5e7ff;
-  }
-
-  .border-right {
-    border-right: 1px solid #d1d5e7ff;
-  }
-
-  .bg-primary,
-  .cta-button p,
-  .cta-button a,
-  .cta-button td {
-    background-color: #bac3ffff !important;
-    color: #111a28ff !important;
-  }
-
-  .bg-gray-25 {
-    background-color: #f6f7fbff !important;
-  }
-
-  .bold {
-    font-weight: 600;
-  }
-
-  .color-white div,
-  .color-white p,
-  .color-white a {
-    color: #ffffffff !important;
-  }
-
-  .color-gray-500 div,
-  .color-gray-500 p {
-    color: #727d9cff !important;
-  }
-
-  .color-slate-900 div,
-  .color-slate-900 p {
-    color: #394851 !important;
-  }
-
-  .footer-info {
-    color: #727d9cff;
-  }
+.primary-button p,
+.primary-button a,
+.primary-button td {
+  background-color: #3053f4ff !important;
+  color: #ffffffff !important;
 }
