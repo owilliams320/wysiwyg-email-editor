@@ -33,7 +33,7 @@ const App: React.FC = () => {
             src="https://cdn.jsdelivr.net/gh/bsahitya/wysiwyg-email-editor/public/images/teradata.svg"
             alt=""
           />
-          <h2>MJML Email Editor</h2>
+          <h2>MJML Email Editor (PR Preview 🔥)</h2>
         </div>
         <MJMLEditor selectedTemplate={selectedValue} />
         <SideSheet
