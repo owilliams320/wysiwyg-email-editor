@@ -1,7 +1,6 @@
 {
   "name": "wysiwyg-email-editor",
   "version": "0.1.0",
-  "homepage": "https://bsahitya.github.io/wysiwyg-email-editor",
   "private": true,
   "dependencies": {
     "@covalent/tokens": "^8.20.1",
